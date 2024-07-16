@@ -13,6 +13,9 @@ export const PostsCollection: CollectionConfig = {
     {
       name: 'text',
       type: 'text',
+      access: {
+        update: ({ req }) => req.locale === 'en',
+      },
     },
     {
       name: 'richText',

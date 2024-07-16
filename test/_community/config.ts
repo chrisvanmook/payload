@@ -75,6 +75,10 @@ export default buildConfigWithDefaults({
     },
     // ...add more globals here
   ],
+  localization: {
+    defaultLocale: 'en',
+    locales: ['en', 'nl'],
+  },
   onInit: async (payload) => {
     await payload.create({
       collection: 'users',
