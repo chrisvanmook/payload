@@ -17,6 +17,9 @@ export const PostsCollection: CollectionConfig = {
     {
       name: 'richText',
       type: 'richText',
+      access: {
+        update: () => false,
+      },
     },
     {
       name: 'richText2',
